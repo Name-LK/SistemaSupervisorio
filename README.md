@@ -2,7 +2,7 @@
 Sistema supervisório utilizando ScadaBR
 
 # Bibliotecas necessárias
-Modbus.h (andré sarmento)
-Ultrassonic.h
-DHT.h
+1. Modbus.h (andré sarmento)
+2. Ultrassonic.h
+3. DHT.h
 
