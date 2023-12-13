@@ -15,11 +15,15 @@ int umidade;
 #define DHTTYPE DHT11
 
 #define ldrPin A2
+
 #define led0 2
 #define led1 3
 #define led2 6
 #define led3 7
-#define led4 8
+
+
+#define ist 8
+#define botaoPin 9
 
 // Inicializa o sensor nos pino 4 e 5 
 Ultrasonic ultrasonic(triggerPin, echoPin);
@@ -52,7 +56,9 @@ void setup() {
     mb.addCoil(1);
     mb.addCoil(2);
     mb.addCoil(3);
-    mb.addCoil(4);
+    
+
+    mb.addIsts(0);
 
 }
 
@@ -74,10 +80,12 @@ void loop() {
    mb.Ireg(3, distancia);
    mb.Ireg(4, umidade);
 
+   mb.Ists(0, digitalRead(botaoPin));
+
    digitalWrite(led0, mb.Coil(0));
    digitalWrite(led1, mb.Coil(1));
    digitalWrite(led2, mb.Coil(2));
    digitalWrite(led3, mb.Coil(3));
-   digitalWrite(led4, mb.Coil(4));
+   
 
 }
