@@ -15,15 +15,11 @@ int umidade;
 #define DHTTYPE DHT11
 
 #define ldrPin A2
-
 #define led0 2
 #define led1 3
 #define led2 6
 #define led3 7
-
-
-#define ist 8
-#define botaoPin 9
+#define led4 8
 
 // Inicializa o sensor nos pino 4 e 5 
 Ultrasonic ultrasonic(triggerPin, echoPin);
@@ -56,9 +52,7 @@ void setup() {
     mb.addCoil(1);
     mb.addCoil(2);
     mb.addCoil(3);
-    
-
-    mb.addIsts(0);
+    mb.addCoil(4);
 
 }
 
@@ -73,19 +67,23 @@ void loop() {
    int luminosidade = analogRead(ldrPin);                         //IREG
    int distancia = ultrasonic.convert(microsec, Ultrasonic::CM); //IREG
    umidade  = analogRead(umidadePin);                           //IREG
-
+   umidade = map(umidade, 1023, 315, 0, 100);
+   Serial.print("umidade do solo  " );
+   Serial.print(umidade);
+   Serial.print(" %");
+   Serial.println("");
    mb.Ireg(0, umidadeAr);
    mb.Ireg(1, temperaturaAr);
    mb.Ireg(2, luminosidade);
    mb.Ireg(3, distancia);
    mb.Ireg(4, umidade);
 
-   mb.Ists(0, digitalRead(botaoPin));
-
    digitalWrite(led0, mb.Coil(0));
    digitalWrite(led1, mb.Coil(1));
    digitalWrite(led2, mb.Coil(2));
    digitalWrite(led3, mb.Coil(3));
-   
+   digitalWrite(led4, mb.Coil(4));
+
+   Serial.println(umidade);
 
 }
