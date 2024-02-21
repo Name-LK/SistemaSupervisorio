@@ -3,7 +3,7 @@
 #include <PubSubClient.h>
 #include <ArduinoJson.h>
 #include <time.h>
-#include "secrets.h"
+#include "Secrets.h"
 #include "DHT.h"
 #define TIME_ZONE -5
  
