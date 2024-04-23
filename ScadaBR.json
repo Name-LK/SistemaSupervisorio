@@ -86,12 +86,12 @@
          "viewComponents":[
             {
                "type":"ANALOG_GRAPHIC",
-               "dataPointXid":"DP_324398",
+               "dataPointXid":"DP_873564",
                "imageSet":"Tanque-Nivel-med",
                "bkgdColorOverride":"",
                "displayControls":false,
                "displayText":true,
-               "max":30.0,
+               "max":500.0,
                "min":0.0,
                "nameOverride":"Nível Reservatório",
                "settableOverride":false,
@@ -100,7 +100,7 @@
             },
             {
                "type":"DYNAMIC_GRAPHIC",
-               "dataPointXid":"DP_745741",
+               "dataPointXid":"DP_804121",
                "dynamicImage":"HorizontalLevel",
                "bkgdColorOverride":"",
                "displayControls":false,
@@ -114,7 +114,7 @@
             },
             {
                "type":"DYNAMIC_GRAPHIC",
-               "dataPointXid":"DP_701389",
+               "dataPointXid":"DP_967299",
                "dynamicImage":"HorizontalLevel",
                "bkgdColorOverride":"",
                "displayControls":false,
@@ -128,7 +128,7 @@
             },
             {
                "type":"DYNAMIC_GRAPHIC",
-               "dataPointXid":"DP_840814",
+               "dataPointXid":"DP_636460",
                "dynamicImage":"HorizontalLevel",
                "bkgdColorOverride":"",
                "displayControls":false,
@@ -142,7 +142,7 @@
             },
             {
                "type":"DYNAMIC_GRAPHIC",
-               "dataPointXid":"DP_671980",
+               "dataPointXid":"DP_491577",
                "dynamicImage":"HorizontalLevel",
                "bkgdColorOverride":"",
                "displayControls":false,
@@ -630,7 +630,7 @@
             "changeType":{
                "type":"INCREMENT_ANALOG",
                "change":100.0,
-               "max":1000.0,
+               "max":500.0,
                "min":0.0,
                "roll":false,
                "startValue":"100"
@@ -651,6 +651,158 @@
          "enabled":true,
          "intervalLoggingPeriod":15,
          "name":"nivelTanque",
+         "purgePeriod":1,
+         "textRenderer":{
+            "type":"PLAIN",
+            "suffix":""
+         },
+         "tolerance":0.0
+      },
+      {
+         "xid":"DP_636460",
+         "loggingType":"ON_CHANGE",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"INSTANT",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "dataType":"NUMERIC",
+            "changeType":{
+               "type":"RANDOM_ANALOG",
+               "max":100.0,
+               "min":0.0,
+               "startValue":"23"
+            },
+            "settable":false
+         },
+         "eventDetectors":[
+         ],
+         "engineeringUnits":"",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"DS_450642",
+         "defaultCacheSize":1,
+         "deviceName":"virutal",
+         "discardExtremeValues":false,
+         "discardHighLimit":1.7976931348623157E308,
+         "discardLowLimit":-1.7976931348623157E308,
+         "enabled":true,
+         "intervalLoggingPeriod":15,
+         "name":"Temperatura",
+         "purgePeriod":1,
+         "textRenderer":{
+            "type":"PLAIN",
+            "suffix":""
+         },
+         "tolerance":0.0
+      },
+      {
+         "xid":"DP_491577",
+         "loggingType":"ON_CHANGE",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"INSTANT",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "dataType":"NUMERIC",
+            "changeType":{
+               "type":"INCREMENT_ANALOG",
+               "change":5.0,
+               "max":100.0,
+               "min":0.0,
+               "roll":true,
+               "startValue":"0"
+            },
+            "settable":false
+         },
+         "eventDetectors":[
+         ],
+         "engineeringUnits":"",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"DS_450642",
+         "defaultCacheSize":1,
+         "deviceName":"virutal",
+         "discardExtremeValues":false,
+         "discardHighLimit":1.7976931348623157E308,
+         "discardLowLimit":-1.7976931348623157E308,
+         "enabled":true,
+         "intervalLoggingPeriod":15,
+         "name":"Umidade",
+         "purgePeriod":1,
+         "textRenderer":{
+            "type":"PLAIN",
+            "suffix":""
+         },
+         "tolerance":0.0
+      },
+      {
+         "xid":"DP_967299",
+         "loggingType":"ON_CHANGE",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"INSTANT",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "dataType":"NUMERIC",
+            "changeType":{
+               "type":"INCREMENT_ANALOG",
+               "change":1.0,
+               "max":100.0,
+               "min":0.0,
+               "roll":true,
+               "startValue":"12"
+            },
+            "settable":false
+         },
+         "eventDetectors":[
+         ],
+         "engineeringUnits":"",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"DS_450642",
+         "defaultCacheSize":1,
+         "deviceName":"virutal",
+         "discardExtremeValues":false,
+         "discardHighLimit":1.7976931348623157E308,
+         "discardLowLimit":-1.7976931348623157E308,
+         "enabled":true,
+         "intervalLoggingPeriod":15,
+         "name":"luminosidade",
+         "purgePeriod":1,
+         "textRenderer":{
+            "type":"PLAIN",
+            "suffix":""
+         },
+         "tolerance":0.0
+      },
+      {
+         "xid":"DP_804121",
+         "loggingType":"ON_CHANGE",
+         "intervalLoggingPeriodType":"MINUTES",
+         "intervalLoggingType":"INSTANT",
+         "purgeType":"YEARS",
+         "pointLocator":{
+            "dataType":"NUMERIC",
+            "changeType":{
+               "type":"RANDOM_ANALOG",
+               "max":100.0,
+               "min":0.0,
+               "startValue":"10"
+            },
+            "settable":false
+         },
+         "eventDetectors":[
+         ],
+         "engineeringUnits":"",
+         "chartColour":null,
+         "chartRenderer":null,
+         "dataSourceXid":"DS_450642",
+         "defaultCacheSize":1,
+         "deviceName":"virutal",
+         "discardExtremeValues":false,
+         "discardHighLimit":1.7976931348623157E308,
+         "discardLowLimit":-1.7976931348623157E308,
+         "enabled":true,
+         "intervalLoggingPeriod":15,
+         "name":"umidadesolo",
          "purgePeriod":1,
          "textRenderer":{
             "type":"PLAIN",
@@ -752,298 +904,508 @@
    "pointValues":[
       {
          "pointXid":"DP_745741",
-         "timestamp":1702589527802,
-         "value":"1.0"
+         "timestamp":1713842340237,
+         "value":"792.0"
       },
       {
          "pointXid":"DP_745741",
-         "timestamp":1702589527302,
-         "value":"2.0"
+         "timestamp":1713842339237,
+         "value":"787.0"
       },
       {
          "pointXid":"DP_745741",
-         "timestamp":1702589525802,
-         "value":"1.0"
+         "timestamp":1713842338737,
+         "value":"699.0"
       },
       {
          "pointXid":"DP_745741",
-         "timestamp":1702589525302,
-         "value":"2.0"
+         "timestamp":1713842337737,
+         "value":"772.0"
       },
       {
          "pointXid":"DP_745741",
-         "timestamp":1702589523802,
-         "value":"1.0"
+         "timestamp":1713842337237,
+         "value":"808.0"
       },
       {
          "pointXid":"DP_745741",
-         "timestamp":1702589523302,
-         "value":"2.0"
+         "timestamp":1713842336237,
+         "value":"689.0"
       },
       {
          "pointXid":"DP_745741",
-         "timestamp":1702589521802,
-         "value":"1.0"
+         "timestamp":1713842335737,
+         "value":"836.0"
       },
       {
          "pointXid":"DP_745741",
-         "timestamp":1702589521302,
-         "value":"2.0"
+         "timestamp":1713842334737,
+         "value":"778.0"
       },
       {
          "pointXid":"DP_745741",
-         "timestamp":1702589519802,
-         "value":"1.0"
+         "timestamp":1713842334237,
+         "value":"621.0"
       },
       {
          "pointXid":"DP_745741",
-         "timestamp":1702589519302,
-         "value":"2.0"
+         "timestamp":1713842333237,
+         "value":"722.0"
       },
       {
          "pointXid":"DP_745741",
-         "timestamp":1702589517802,
-         "value":"1.0"
+         "timestamp":1713842332737,
+         "value":"813.0"
       },
       {
          "pointXid":"DP_745741",
-         "timestamp":1702589517302,
-         "value":"2.0"
+         "timestamp":1713842331737,
+         "value":"620.0"
       },
       {
          "pointXid":"DP_745741",
-         "timestamp":1702589511802,
-         "value":"1.0"
+         "timestamp":1713842331237,
+         "value":"726.0"
       },
       {
          "pointXid":"DP_745741",
-         "timestamp":1702589511302,
-         "value":"2.0"
+         "timestamp":1713842330237,
+         "value":"836.0"
       },
       {
          "pointXid":"DP_745741",
-         "timestamp":1702589509802,
-         "value":"1.0"
+         "timestamp":1713842329737,
+         "value":"654.0"
       },
       {
          "pointXid":"DP_745741",
-         "timestamp":1702589509302,
-         "value":"2.0"
+         "timestamp":1713842328737,
+         "value":"780.0"
       },
       {
          "pointXid":"DP_745741",
-         "timestamp":1702589505802,
-         "value":"1.0"
+         "timestamp":1713842328237,
+         "value":"789.0"
       },
       {
          "pointXid":"DP_745741",
-         "timestamp":1702589505302,
-         "value":"2.0"
+         "timestamp":1713842327237,
+         "value":"621.0"
       },
       {
          "pointXid":"DP_745741",
-         "timestamp":1702589503802,
-         "value":"1.0"
+         "timestamp":1713842326737,
+         "value":"749.0"
       },
       {
          "pointXid":"DP_745741",
-         "timestamp":1702589503302,
-         "value":"2.0"
+         "timestamp":1713842325737,
+         "value":"770.0"
       },
       {
          "pointXid":"DP_745741",
-         "timestamp":1702589501802,
-         "value":"1.0"
+         "timestamp":1713842325237,
+         "value":"688.0"
       },
       {
          "pointXid":"DP_745741",
-         "timestamp":1702589501302,
-         "value":"2.0"
+         "timestamp":1713842324237,
+         "value":"731.0"
       },
       {
          "pointXid":"DP_745741",
-         "timestamp":1702589499802,
-         "value":"1.0"
+         "timestamp":1713842323737,
+         "value":"779.0"
       },
       {
          "pointXid":"DP_745741",
-         "timestamp":1702589499302,
-         "value":"2.0"
+         "timestamp":1713842322737,
+         "value":"651.0"
       },
       {
          "pointXid":"DP_745741",
-         "timestamp":1702589491802,
-         "value":"1.0"
+         "timestamp":1713842321737,
+         "value":"757.0"
       },
       {
          "pointXid":"DP_745741",
-         "timestamp":1702589491302,
-         "value":"2.0"
+         "timestamp":1713842321237,
+         "value":"832.0"
       },
       {
          "pointXid":"DP_745741",
-         "timestamp":1702589489802,
-         "value":"1.0"
+         "timestamp":1713842320237,
+         "value":"692.0"
       },
       {
          "pointXid":"DP_745741",
-         "timestamp":1702589489302,
-         "value":"2.0"
+         "timestamp":1713842319737,
+         "value":"800.0"
       },
       {
          "pointXid":"DP_745741",
-         "timestamp":1702589487802,
-         "value":"1.0"
+         "timestamp":1713842318737,
+         "value":"742.0"
       },
       {
          "pointXid":"DP_745741",
-         "timestamp":1702589487302,
-         "value":"2.0"
+         "timestamp":1713842318237,
+         "value":"684.0"
       },
       {
          "pointXid":"DP_745741",
-         "timestamp":1702589485802,
-         "value":"1.0"
+         "timestamp":1713842317237,
+         "value":"760.0"
       },
       {
          "pointXid":"DP_745741",
-         "timestamp":1702589485302,
-         "value":"2.0"
+         "timestamp":1713842316737,
+         "value":"799.0"
       },
       {
          "pointXid":"DP_745741",
-         "timestamp":1702589481802,
-         "value":"1.0"
+         "timestamp":1713842315737,
+         "value":"717.0"
       },
       {
          "pointXid":"DP_745741",
-         "timestamp":1702589481302,
-         "value":"2.0"
+         "timestamp":1713842315237,
+         "value":"816.0"
       },
       {
          "pointXid":"DP_745741",
-         "timestamp":1702589479802,
-         "value":"1.0"
+         "timestamp":1713842314237,
+         "value":"825.0"
       },
       {
          "pointXid":"DP_745741",
-         "timestamp":1702589479302,
-         "value":"2.0"
+         "timestamp":1713842313737,
+         "value":"619.0"
       },
       {
          "pointXid":"DP_745741",
-         "timestamp":1702589420302,
-         "value":"1.0"
+         "timestamp":1713842312737,
+         "value":"762.0"
       },
       {
          "pointXid":"DP_745741",
-         "timestamp":1702589419302,
-         "value":"132.0"
+         "timestamp":1713842312237,
+         "value":"796.0"
       },
       {
          "pointXid":"DP_745741",
-         "timestamp":1702589416802,
-         "value":"133.0"
+         "timestamp":1713842311237,
+         "value":"623.0"
       },
       {
          "pointXid":"DP_745741",
-         "timestamp":1702589416302,
-         "value":"134.0"
+         "timestamp":1713842310737,
+         "value":"827.0"
       },
       {
          "pointXid":"DP_745741",
-         "timestamp":1702589413302,
-         "value":"1.0"
+         "timestamp":1713842309737,
+         "value":"805.0"
       },
       {
          "pointXid":"DP_745741",
-         "timestamp":1702589412802,
-         "value":"2.0"
+         "timestamp":1713842308737,
+         "value":"628.0"
       },
       {
          "pointXid":"DP_745741",
-         "timestamp":1702589405302,
-         "value":"1.0"
+         "timestamp":1713842308237,
+         "value":"729.0"
       },
       {
          "pointXid":"DP_745741",
-         "timestamp":1702589403302,
-         "value":"2.0"
+         "timestamp":1713842307237,
+         "value":"802.0"
       },
       {
          "pointXid":"DP_745741",
-         "timestamp":1702589402802,
-         "value":"3.0"
+         "timestamp":1713842306737,
+         "value":"678.0"
       },
       {
          "pointXid":"DP_745741",
-         "timestamp":1702589397302,
-         "value":"1.0"
+         "timestamp":1713842305737,
+         "value":"839.0"
       },
       {
          "pointXid":"DP_745741",
-         "timestamp":1702589396802,
-         "value":"2.0"
+         "timestamp":1713842305237,
+         "value":"840.0"
       },
       {
          "pointXid":"DP_745741",
-         "timestamp":1702589393302,
-         "value":"1.0"
+         "timestamp":1713842304237,
+         "value":"632.0"
       },
       {
          "pointXid":"DP_745741",
-         "timestamp":1702589392802,
-         "value":"2.0"
+         "timestamp":1713842303737,
+         "value":"812.0"
       },
       {
          "pointXid":"DP_745741",
-         "timestamp":1702589387302,
-         "value":"1.0"
+         "timestamp":1713842302737,
+         "value":"780.0"
       },
       {
          "pointXid":"DP_745741",
-         "timestamp":1702589386802,
-         "value":"2.0"
+         "timestamp":1713842302237,
+         "value":"683.0"
       },
       {
          "pointXid":"DP_745741",
-         "timestamp":1702589383302,
-         "value":"1.0"
+         "timestamp":1713842301237,
+         "value":"754.0"
       },
       {
          "pointXid":"DP_745741",
-         "timestamp":1702589382802,
-         "value":"2.0"
+         "timestamp":1713842300737,
+         "value":"838.0"
       },
       {
          "pointXid":"DP_745741",
-         "timestamp":1702589379302,
-         "value":"1.0"
+         "timestamp":1713842299737,
+         "value":"718.0"
       },
       {
          "pointXid":"DP_745741",
-         "timestamp":1702589378802,
-         "value":"2.0"
+         "timestamp":1713842299237,
+         "value":"767.0"
       },
       {
          "pointXid":"DP_745741",
-         "timestamp":1702589373302,
-         "value":"1.0"
+         "timestamp":1713842298237,
+         "value":"772.0"
       },
       {
          "pointXid":"DP_745741",
-         "timestamp":1702589372802,
-         "value":"2.0"
+         "timestamp":1713842297737,
+         "value":"739.0"
       },
       {
          "pointXid":"DP_745741",
-         "timestamp":1702586892953,
-         "value":"1.0"
+         "timestamp":1713842296737,
+         "value":"764.0"
       },
       {
          "pointXid":"DP_745741",
-         "timestamp":1702586892760,
-         "value":"1.0"
+         "timestamp":1713842296237,
+         "value":"736.0"
+      },
+      {
+         "pointXid":"DP_745741",
+         "timestamp":1713842295237,
+         "value":"680.0"
+      },
+      {
+         "pointXid":"DP_745741",
+         "timestamp":1713842294737,
+         "value":"797.0"
+      },
+      {
+         "pointXid":"DP_745741",
+         "timestamp":1713842293737,
+         "value":"808.0"
+      },
+      {
+         "pointXid":"DP_745741",
+         "timestamp":1713842292737,
+         "value":"684.0"
+      },
+      {
+         "pointXid":"DP_745741",
+         "timestamp":1713842291737,
+         "value":"835.0"
+      },
+      {
+         "pointXid":"DP_745741",
+         "timestamp":1713842291237,
+         "value":"774.0"
+      },
+      {
+         "pointXid":"DP_745741",
+         "timestamp":1713842290237,
+         "value":"670.0"
+      },
+      {
+         "pointXid":"DP_745741",
+         "timestamp":1713842289737,
+         "value":"760.0"
+      },
+      {
+         "pointXid":"DP_745741",
+         "timestamp":1713842288737,
+         "value":"740.0"
+      },
+      {
+         "pointXid":"DP_745741",
+         "timestamp":1713842288237,
+         "value":"685.0"
+      },
+      {
+         "pointXid":"DP_745741",
+         "timestamp":1713842287237,
+         "value":"761.0"
+      },
+      {
+         "pointXid":"DP_745741",
+         "timestamp":1713842286737,
+         "value":"766.0"
+      },
+      {
+         "pointXid":"DP_745741",
+         "timestamp":1713842285737,
+         "value":"667.0"
+      },
+      {
+         "pointXid":"DP_745741",
+         "timestamp":1713842285237,
+         "value":"767.0"
+      },
+      {
+         "pointXid":"DP_745741",
+         "timestamp":1713842284237,
+         "value":"824.0"
+      },
+      {
+         "pointXid":"DP_745741",
+         "timestamp":1713842283737,
+         "value":"735.0"
+      },
+      {
+         "pointXid":"DP_745741",
+         "timestamp":1713842282737,
+         "value":"840.0"
+      },
+      {
+         "pointXid":"DP_745741",
+         "timestamp":1713842282237,
+         "value":"765.0"
+      },
+      {
+         "pointXid":"DP_745741",
+         "timestamp":1713842281237,
+         "value":"690.0"
+      },
+      {
+         "pointXid":"DP_745741",
+         "timestamp":1713842280737,
+         "value":"768.0"
+      },
+      {
+         "pointXid":"DP_745741",
+         "timestamp":1713842279737,
+         "value":"822.0"
+      },
+      {
+         "pointXid":"DP_745741",
+         "timestamp":1713842279237,
+         "value":"613.0"
+      },
+      {
+         "pointXid":"DP_745741",
+         "timestamp":1713842278737,
+         "value":"751.0"
+      },
+      {
+         "pointXid":"DP_745741",
+         "timestamp":1713842277737,
+         "value":"717.0"
+      },
+      {
+         "pointXid":"DP_745741",
+         "timestamp":1713842277237,
+         "value":"616.0"
+      },
+      {
+         "pointXid":"DP_745741",
+         "timestamp":1713842276237,
+         "value":"732.0"
+      },
+      {
+         "pointXid":"DP_745741",
+         "timestamp":1713842275737,
+         "value":"724.0"
+      },
+      {
+         "pointXid":"DP_745741",
+         "timestamp":1713842274737,
+         "value":"703.0"
+      },
+      {
+         "pointXid":"DP_745741",
+         "timestamp":1713842274237,
+         "value":"772.0"
+      },
+      {
+         "pointXid":"DP_745741",
+         "timestamp":1713842273237,
+         "value":"800.0"
+      },
+      {
+         "pointXid":"DP_745741",
+         "timestamp":1713842272737,
+         "value":"659.0"
+      },
+      {
+         "pointXid":"DP_745741",
+         "timestamp":1713842271737,
+         "value":"788.0"
+      },
+      {
+         "pointXid":"DP_745741",
+         "timestamp":1713842270737,
+         "value":"765.0"
+      },
+      {
+         "pointXid":"DP_745741",
+         "timestamp":1713842270237,
+         "value":"686.0"
+      },
+      {
+         "pointXid":"DP_745741",
+         "timestamp":1713842269237,
+         "value":"802.0"
+      },
+      {
+         "pointXid":"DP_745741",
+         "timestamp":1713842268737,
+         "value":"759.0"
+      },
+      {
+         "pointXid":"DP_745741",
+         "timestamp":1713842267737,
+         "value":"685.0"
+      },
+      {
+         "pointXid":"DP_745741",
+         "timestamp":1713842267237,
+         "value":"768.0"
+      },
+      {
+         "pointXid":"DP_745741",
+         "timestamp":1713842266737,
+         "value":"798.0"
+      },
+      {
+         "pointXid":"DP_745741",
+         "timestamp":1713842265737,
+         "value":"658.0"
+      },
+      {
+         "pointXid":"DP_745741",
+         "timestamp":1713842264737,
+         "value":"784.0"
+      },
+      {
+         "pointXid":"DP_671980",
+         "timestamp":1713840012737,
+         "value":"0.0"
       },
       {
          "pointXid":"DP_671980",
@@ -1541,9 +1903,9 @@
          "value":"10.0"
       },
       {
-         "pointXid":"DP_671980",
-         "timestamp":1702588513802,
-         "value":"11.0"
+         "pointXid":"DP_840814",
+         "timestamp":1713840012737,
+         "value":"0.0"
       },
       {
          "pointXid":"DP_840814",
@@ -1577,503 +1939,508 @@
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589529302,
-         "value":"989.0"
+         "timestamp":1713842340237,
+         "value":"761.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589528802,
-         "value":"996.0"
+         "timestamp":1713842339237,
+         "value":"743.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589528302,
-         "value":"995.0"
+         "timestamp":1713842338737,
+         "value":"693.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589527802,
-         "value":"994.0"
+         "timestamp":1713842337737,
+         "value":"737.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589527302,
-         "value":"989.0"
+         "timestamp":1713842337237,
+         "value":"780.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589526802,
-         "value":"995.0"
+         "timestamp":1713842336237,
+         "value":"669.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589526302,
-         "value":"993.0"
+         "timestamp":1713842335737,
+         "value":"809.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589525802,
-         "value":"995.0"
+         "timestamp":1713842334737,
+         "value":"745.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589525302,
-         "value":"991.0"
+         "timestamp":1713842334237,
+         "value":"593.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589524802,
-         "value":"997.0"
+         "timestamp":1713842333237,
+         "value":"671.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589524302,
-         "value":"994.0"
+         "timestamp":1713842332737,
+         "value":"774.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589523802,
-         "value":"996.0"
+         "timestamp":1713842331737,
+         "value":"590.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589521802,
-         "value":"995.0"
+         "timestamp":1713842331237,
+         "value":"673.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589520802,
-         "value":"993.0"
+         "timestamp":1713842330237,
+         "value":"810.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589519302,
-         "value":"995.0"
+         "timestamp":1713842329737,
+         "value":"629.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589518802,
-         "value":"996.0"
+         "timestamp":1713842328737,
+         "value":"735.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589518302,
-         "value":"993.0"
+         "timestamp":1713842328237,
+         "value":"758.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589517802,
-         "value":"997.0"
+         "timestamp":1713842327237,
+         "value":"595.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589517302,
-         "value":"993.0"
+         "timestamp":1713842326737,
+         "value":"700.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589516802,
-         "value":"996.0"
+         "timestamp":1713842325737,
+         "value":"725.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589516302,
-         "value":"994.0"
+         "timestamp":1713842325237,
+         "value":"680.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589515302,
-         "value":"993.0"
+         "timestamp":1713842324237,
+         "value":"685.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589514802,
-         "value":"994.0"
+         "timestamp":1713842323737,
+         "value":"747.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589514302,
-         "value":"995.0"
+         "timestamp":1713842322737,
+         "value":"636.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589513302,
-         "value":"994.0"
+         "timestamp":1713842321737,
+         "value":"709.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589512802,
-         "value":"998.0"
+         "timestamp":1713842321237,
+         "value":"806.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589512302,
-         "value":"994.0"
+         "timestamp":1713842320237,
+         "value":"673.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589511802,
-         "value":"996.0"
+         "timestamp":1713842319737,
+         "value":"771.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589511302,
-         "value":"992.0"
+         "timestamp":1713842318737,
+         "value":"691.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589510802,
-         "value":"994.0"
+         "timestamp":1713842318237,
+         "value":"675.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589510302,
-         "value":"996.0"
+         "timestamp":1713842317237,
+         "value":"722.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589509302,
-         "value":"994.0"
+         "timestamp":1713842316737,
+         "value":"771.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589508802,
-         "value":"996.0"
+         "timestamp":1713842315737,
+         "value":"704.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589508302,
-         "value":"995.0"
+         "timestamp":1713842315237,
+         "value":"788.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589507802,
-         "value":"997.0"
+         "timestamp":1713842314237,
+         "value":"789.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589507302,
-         "value":"991.0"
+         "timestamp":1713842313737,
+         "value":"591.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589506302,
-         "value":"994.0"
+         "timestamp":1713842312737,
+         "value":"714.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589505302,
-         "value":"996.0"
+         "timestamp":1713842312237,
+         "value":"753.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589504802,
-         "value":"992.0"
+         "timestamp":1713842311237,
+         "value":"599.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589503802,
-         "value":"994.0"
+         "timestamp":1713842310737,
+         "value":"793.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589503302,
-         "value":"993.0"
+         "timestamp":1713842309737,
+         "value":"776.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589502802,
-         "value":"994.0"
+         "timestamp":1713842308737,
+         "value":"604.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589502302,
-         "value":"993.0"
+         "timestamp":1713842308237,
+         "value":"682.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589501802,
-         "value":"994.0"
+         "timestamp":1713842307237,
+         "value":"772.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589501302,
-         "value":"991.0"
+         "timestamp":1713842306737,
+         "value":"656.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589500802,
-         "value":"995.0"
+         "timestamp":1713842305737,
+         "value":"813.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589500302,
-         "value":"997.0"
+         "timestamp":1713842305237,
+         "value":"814.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589499302,
-         "value":"993.0"
+         "timestamp":1713842304237,
+         "value":"609.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589498802,
-         "value":"997.0"
+         "timestamp":1713842303737,
+         "value":"784.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589498302,
-         "value":"993.0"
+         "timestamp":1713842302737,
+         "value":"736.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589497802,
-         "value":"994.0"
+         "timestamp":1713842302237,
+         "value":"675.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589496302,
-         "value":"995.0"
+         "timestamp":1713842301237,
+         "value":"713.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589495302,
-         "value":"993.0"
+         "timestamp":1713842300737,
+         "value":"812.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589494802,
-         "value":"996.0"
+         "timestamp":1713842299737,
+         "value":"706.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589494302,
-         "value":"993.0"
+         "timestamp":1713842299237,
+         "value":"730.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589493802,
-         "value":"994.0"
+         "timestamp":1713842298237,
+         "value":"739.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589493302,
-         "value":"991.0"
+         "timestamp":1713842297737,
+         "value":"735.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589492302,
-         "value":"994.0"
+         "timestamp":1713842296737,
+         "value":"726.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589491802,
-         "value":"995.0"
+         "timestamp":1713842296237,
+         "value":"690.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589491302,
-         "value":"992.0"
+         "timestamp":1713842295237,
+         "value":"659.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589490302,
-         "value":"996.0"
+         "timestamp":1713842294737,
+         "value":"754.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589489802,
-         "value":"994.0"
+         "timestamp":1713842293737,
+         "value":"780.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589489302,
-         "value":"990.0"
+         "timestamp":1713842292737,
+         "value":"676.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589488802,
-         "value":"994.0"
+         "timestamp":1713842291737,
+         "value":"808.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589488302,
-         "value":"992.0"
+         "timestamp":1713842291237,
+         "value":"730.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589487802,
-         "value":"995.0"
+         "timestamp":1713842290237,
+         "value":"647.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589487302,
-         "value":"991.0"
+         "timestamp":1713842289737,
+         "value":"711.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589486802,
-         "value":"996.0"
+         "timestamp":1713842288737,
+         "value":"688.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589486302,
-         "value":"995.0"
+         "timestamp":1713842288237,
+         "value":"677.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589485802,
-         "value":"992.0"
+         "timestamp":1713842287237,
+         "value":"723.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589484802,
-         "value":"993.0"
+         "timestamp":1713842286737,
+         "value":"731.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589484302,
-         "value":"997.0"
+         "timestamp":1713842285737,
+         "value":"644.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589483802,
-         "value":"991.0"
+         "timestamp":1713842285237,
+         "value":"719.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589483302,
-         "value":"992.0"
+         "timestamp":1713842284237,
+         "value":"787.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589482802,
-         "value":"993.0"
+         "timestamp":1713842283737,
+         "value":"731.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589482302,
-         "value":"994.0"
+         "timestamp":1713842282737,
+         "value":"812.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589481802,
-         "value":"991.0"
+         "timestamp":1713842282237,
+         "value":"716.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589480802,
-         "value":"990.0"
+         "timestamp":1713842281237,
+         "value":"682.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589480302,
-         "value":"988.0"
+         "timestamp":1713842280737,
+         "value":"720.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589479802,
-         "value":"991.0"
+         "timestamp":1713842279737,
+         "value":"795.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589479302,
-         "value":"987.0"
+         "timestamp":1713842279237,
+         "value":"583.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589478802,
-         "value":"989.0"
+         "timestamp":1713842278737,
+         "value":"712.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589478302,
-         "value":"990.0"
+         "timestamp":1713842277737,
+         "value":"665.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589476802,
-         "value":"994.0"
+         "timestamp":1713842277237,
+         "value":"588.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589476302,
-         "value":"993.0"
+         "timestamp":1713842276237,
+         "value":"678.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589475802,
-         "value":"995.0"
+         "timestamp":1713842275737,
+         "value":"671.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589475302,
-         "value":"997.0"
+         "timestamp":1713842274737,
+         "value":"693.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589474802,
-         "value":"994.0"
+         "timestamp":1713842274237,
+         "value":"732.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589474302,
-         "value":"996.0"
+         "timestamp":1713842273237,
+         "value":"766.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589473302,
-         "value":"993.0"
+         "timestamp":1713842272737,
+         "value":"639.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589472802,
-         "value":"994.0"
+         "timestamp":1713842271737,
+         "value":"746.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589472302,
-         "value":"993.0"
+         "timestamp":1713842270737,
+         "value":"724.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589471802,
-         "value":"994.0"
+         "timestamp":1713842270237,
+         "value":"668.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589471302,
-         "value":"990.0"
+         "timestamp":1713842269237,
+         "value":"768.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589470802,
-         "value":"993.0"
+         "timestamp":1713842268737,
+         "value":"715.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589470302,
-         "value":"994.0"
+         "timestamp":1713842267737,
+         "value":"672.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589469302,
-         "value":"996.0"
+         "timestamp":1713842267237,
+         "value":"726.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589468302,
-         "value":"994.0"
+         "timestamp":1713842266737,
+         "value":"763.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589467802,
-         "value":"993.0"
+         "timestamp":1713842265737,
+         "value":"638.0"
       },
       {
          "pointXid":"DP_701389",
-         "timestamp":1702589467302,
-         "value":"996.0"
+         "timestamp":1713842264737,
+         "value":"743.0"
+      },
+      {
+         "pointXid":"DP_324398",
+         "timestamp":1713840012737,
+         "value":"0.0"
       },
       {
          "pointXid":"DP_324398",
@@ -2571,11 +2938,6 @@
          "value":"94.0"
       },
       {
-         "pointXid":"DP_324398",
-         "timestamp":1702589470302,
-         "value":"44.0"
-      },
-      {
          "pointXid":"DP_023561",
          "timestamp":1700599778474,
          "value":"true"
@@ -2587,503 +2949,2503 @@
       },
       {
          "pointXid":"DP_873564",
-         "timestamp":1702611341076,
-         "value":"200.0"
-      },
-      {
-         "pointXid":"DP_873564",
-         "timestamp":1702611340076,
-         "value":"300.0"
-      },
-      {
-         "pointXid":"DP_873564",
-         "timestamp":1702611339076,
+         "timestamp":1713840014706,
          "value":"400.0"
       },
       {
          "pointXid":"DP_873564",
-         "timestamp":1702611338076,
-         "value":"500.0"
-      },
-      {
-         "pointXid":"DP_873564",
-         "timestamp":1702611337076,
-         "value":"600.0"
-      },
-      {
-         "pointXid":"DP_873564",
-         "timestamp":1702611336076,
-         "value":"700.0"
-      },
-      {
-         "pointXid":"DP_873564",
-         "timestamp":1702611335076,
-         "value":"800.0"
-      },
-      {
-         "pointXid":"DP_873564",
-         "timestamp":1702611334076,
-         "value":"900.0"
-      },
-      {
-         "pointXid":"DP_873564",
-         "timestamp":1702611333076,
-         "value":"1000.0"
-      },
-      {
-         "pointXid":"DP_873564",
-         "timestamp":1702611332076,
-         "value":"900.0"
-      },
-      {
-         "pointXid":"DP_873564",
-         "timestamp":1702611331076,
-         "value":"800.0"
-      },
-      {
-         "pointXid":"DP_873564",
-         "timestamp":1702611330076,
-         "value":"700.0"
-      },
-      {
-         "pointXid":"DP_873564",
-         "timestamp":1702611329076,
-         "value":"600.0"
-      },
-      {
-         "pointXid":"DP_873564",
-         "timestamp":1702611328076,
-         "value":"500.0"
-      },
-      {
-         "pointXid":"DP_873564",
-         "timestamp":1702611327076,
-         "value":"400.0"
-      },
-      {
-         "pointXid":"DP_873564",
-         "timestamp":1702611326076,
+         "timestamp":1713840013706,
          "value":"300.0"
       },
       {
          "pointXid":"DP_873564",
-         "timestamp":1702611325076,
+         "timestamp":1713840012706,
          "value":"200.0"
       },
       {
          "pointXid":"DP_873564",
-         "timestamp":1702611324076,
+         "timestamp":1713840011706,
          "value":"100.0"
       },
       {
          "pointXid":"DP_873564",
-         "timestamp":1702611323076,
+         "timestamp":1713840010706,
          "value":"0.0"
       },
       {
          "pointXid":"DP_873564",
-         "timestamp":1702611322076,
+         "timestamp":1713840009706,
          "value":"100.0"
       },
       {
          "pointXid":"DP_873564",
-         "timestamp":1702611321076,
+         "timestamp":1713840008706,
          "value":"200.0"
       },
       {
          "pointXid":"DP_873564",
-         "timestamp":1702611320076,
+         "timestamp":1713840007706,
          "value":"300.0"
       },
       {
          "pointXid":"DP_873564",
-         "timestamp":1702611319076,
+         "timestamp":1713840006706,
          "value":"400.0"
       },
       {
          "pointXid":"DP_873564",
-         "timestamp":1702611318076,
+         "timestamp":1713840005706,
          "value":"500.0"
       },
       {
          "pointXid":"DP_873564",
-         "timestamp":1702611317076,
-         "value":"600.0"
-      },
-      {
-         "pointXid":"DP_873564",
-         "timestamp":1702611316076,
-         "value":"700.0"
-      },
-      {
-         "pointXid":"DP_873564",
-         "timestamp":1702611315076,
-         "value":"800.0"
-      },
-      {
-         "pointXid":"DP_873564",
-         "timestamp":1702611314076,
-         "value":"900.0"
-      },
-      {
-         "pointXid":"DP_873564",
-         "timestamp":1702611313076,
-         "value":"1000.0"
-      },
-      {
-         "pointXid":"DP_873564",
-         "timestamp":1702611312076,
-         "value":"900.0"
-      },
-      {
-         "pointXid":"DP_873564",
-         "timestamp":1702611311076,
-         "value":"800.0"
-      },
-      {
-         "pointXid":"DP_873564",
-         "timestamp":1702611310076,
-         "value":"700.0"
-      },
-      {
-         "pointXid":"DP_873564",
-         "timestamp":1702611309076,
-         "value":"600.0"
-      },
-      {
-         "pointXid":"DP_873564",
-         "timestamp":1702611308076,
-         "value":"500.0"
-      },
-      {
-         "pointXid":"DP_873564",
-         "timestamp":1702611307076,
+         "timestamp":1713840004706,
          "value":"400.0"
       },
       {
          "pointXid":"DP_873564",
-         "timestamp":1702611306076,
+         "timestamp":1713840003706,
          "value":"300.0"
       },
       {
          "pointXid":"DP_873564",
-         "timestamp":1702611305076,
+         "timestamp":1713840002706,
          "value":"200.0"
       },
       {
          "pointXid":"DP_873564",
-         "timestamp":1702611304076,
+         "timestamp":1713840001706,
          "value":"100.0"
       },
       {
          "pointXid":"DP_873564",
-         "timestamp":1702611303076,
+         "timestamp":1713840000706,
          "value":"0.0"
       },
       {
          "pointXid":"DP_873564",
-         "timestamp":1702611302076,
+         "timestamp":1713839999706,
          "value":"100.0"
       },
       {
          "pointXid":"DP_873564",
-         "timestamp":1702611301076,
+         "timestamp":1713839998706,
          "value":"200.0"
       },
       {
          "pointXid":"DP_873564",
-         "timestamp":1702611300076,
+         "timestamp":1713839997706,
          "value":"300.0"
       },
       {
          "pointXid":"DP_873564",
-         "timestamp":1702611299076,
+         "timestamp":1713839996706,
          "value":"400.0"
       },
       {
          "pointXid":"DP_873564",
-         "timestamp":1702611298076,
+         "timestamp":1713839995706,
          "value":"500.0"
       },
       {
          "pointXid":"DP_873564",
-         "timestamp":1702611297076,
-         "value":"600.0"
-      },
-      {
-         "pointXid":"DP_873564",
-         "timestamp":1702611296076,
-         "value":"700.0"
-      },
-      {
-         "pointXid":"DP_873564",
-         "timestamp":1702611295076,
-         "value":"800.0"
-      },
-      {
-         "pointXid":"DP_873564",
-         "timestamp":1702611294076,
-         "value":"900.0"
-      },
-      {
-         "pointXid":"DP_873564",
-         "timestamp":1702611293076,
-         "value":"1000.0"
-      },
-      {
-         "pointXid":"DP_873564",
-         "timestamp":1702611292076,
-         "value":"900.0"
-      },
-      {
-         "pointXid":"DP_873564",
-         "timestamp":1702611291076,
-         "value":"800.0"
-      },
-      {
-         "pointXid":"DP_873564",
-         "timestamp":1702611290076,
-         "value":"700.0"
-      },
-      {
-         "pointXid":"DP_873564",
-         "timestamp":1702611289076,
-         "value":"600.0"
-      },
-      {
-         "pointXid":"DP_873564",
-         "timestamp":1702611288076,
-         "value":"500.0"
-      },
-      {
-         "pointXid":"DP_873564",
-         "timestamp":1702611287076,
+         "timestamp":1713839994706,
          "value":"400.0"
       },
       {
          "pointXid":"DP_873564",
-         "timestamp":1702611286076,
+         "timestamp":1713839993706,
          "value":"300.0"
       },
       {
          "pointXid":"DP_873564",
-         "timestamp":1702611285076,
+         "timestamp":1713839992706,
          "value":"200.0"
       },
       {
          "pointXid":"DP_873564",
-         "timestamp":1702611284076,
+         "timestamp":1713839991706,
          "value":"100.0"
       },
       {
          "pointXid":"DP_873564",
-         "timestamp":1702611283076,
+         "timestamp":1713839990706,
          "value":"0.0"
       },
       {
          "pointXid":"DP_873564",
-         "timestamp":1702611282076,
+         "timestamp":1713839989706,
          "value":"100.0"
       },
       {
          "pointXid":"DP_873564",
-         "timestamp":1702611281076,
+         "timestamp":1713839988706,
          "value":"200.0"
       },
       {
          "pointXid":"DP_873564",
-         "timestamp":1702611280076,
+         "timestamp":1713839987706,
          "value":"300.0"
       },
       {
          "pointXid":"DP_873564",
-         "timestamp":1702611279076,
+         "timestamp":1713839986706,
          "value":"400.0"
       },
       {
          "pointXid":"DP_873564",
-         "timestamp":1702611278076,
+         "timestamp":1713839985706,
          "value":"500.0"
       },
       {
          "pointXid":"DP_873564",
-         "timestamp":1702611277076,
-         "value":"600.0"
-      },
-      {
-         "pointXid":"DP_873564",
-         "timestamp":1702611276076,
-         "value":"700.0"
-      },
-      {
-         "pointXid":"DP_873564",
-         "timestamp":1702611275076,
-         "value":"800.0"
-      },
-      {
-         "pointXid":"DP_873564",
-         "timestamp":1702611274076,
-         "value":"900.0"
-      },
-      {
-         "pointXid":"DP_873564",
-         "timestamp":1702611273076,
-         "value":"1000.0"
-      },
-      {
-         "pointXid":"DP_873564",
-         "timestamp":1702611272076,
-         "value":"900.0"
-      },
-      {
-         "pointXid":"DP_873564",
-         "timestamp":1702611271076,
-         "value":"800.0"
-      },
-      {
-         "pointXid":"DP_873564",
-         "timestamp":1702611270076,
-         "value":"700.0"
-      },
-      {
-         "pointXid":"DP_873564",
-         "timestamp":1702611269076,
-         "value":"600.0"
-      },
-      {
-         "pointXid":"DP_873564",
-         "timestamp":1702611268076,
-         "value":"500.0"
-      },
-      {
-         "pointXid":"DP_873564",
-         "timestamp":1702611267076,
+         "timestamp":1713839984706,
          "value":"400.0"
       },
       {
          "pointXid":"DP_873564",
-         "timestamp":1702611266076,
+         "timestamp":1713839983706,
          "value":"300.0"
       },
       {
          "pointXid":"DP_873564",
-         "timestamp":1702611265076,
+         "timestamp":1713839982706,
          "value":"200.0"
       },
       {
          "pointXid":"DP_873564",
-         "timestamp":1702611264076,
+         "timestamp":1713839981706,
          "value":"100.0"
       },
       {
          "pointXid":"DP_873564",
-         "timestamp":1702611263076,
+         "timestamp":1713839980706,
          "value":"0.0"
       },
       {
          "pointXid":"DP_873564",
-         "timestamp":1702611262076,
+         "timestamp":1713839979706,
          "value":"100.0"
       },
       {
          "pointXid":"DP_873564",
-         "timestamp":1702611261076,
+         "timestamp":1713839978706,
          "value":"200.0"
       },
       {
          "pointXid":"DP_873564",
-         "timestamp":1702611260076,
+         "timestamp":1713839977706,
          "value":"300.0"
       },
       {
          "pointXid":"DP_873564",
-         "timestamp":1702611259076,
+         "timestamp":1713839976706,
          "value":"400.0"
       },
       {
          "pointXid":"DP_873564",
-         "timestamp":1702611258076,
+         "timestamp":1713839975706,
          "value":"500.0"
       },
       {
          "pointXid":"DP_873564",
-         "timestamp":1702611257076,
-         "value":"600.0"
-      },
-      {
-         "pointXid":"DP_873564",
-         "timestamp":1702611256076,
-         "value":"700.0"
-      },
-      {
-         "pointXid":"DP_873564",
-         "timestamp":1702611255076,
-         "value":"800.0"
-      },
-      {
-         "pointXid":"DP_873564",
-         "timestamp":1702611254076,
-         "value":"900.0"
-      },
-      {
-         "pointXid":"DP_873564",
-         "timestamp":1702611253076,
-         "value":"1000.0"
-      },
-      {
-         "pointXid":"DP_873564",
-         "timestamp":1702611252076,
-         "value":"900.0"
-      },
-      {
-         "pointXid":"DP_873564",
-         "timestamp":1702611251076,
-         "value":"800.0"
-      },
-      {
-         "pointXid":"DP_873564",
-         "timestamp":1702611250076,
-         "value":"700.0"
-      },
-      {
-         "pointXid":"DP_873564",
-         "timestamp":1702611249076,
-         "value":"600.0"
-      },
-      {
-         "pointXid":"DP_873564",
-         "timestamp":1702611248076,
-         "value":"500.0"
-      },
-      {
-         "pointXid":"DP_873564",
-         "timestamp":1702611247076,
+         "timestamp":1713839974706,
          "value":"400.0"
       },
       {
          "pointXid":"DP_873564",
-         "timestamp":1702611246076,
+         "timestamp":1713839973706,
          "value":"300.0"
       },
       {
          "pointXid":"DP_873564",
-         "timestamp":1702611245076,
+         "timestamp":1713839972706,
          "value":"200.0"
       },
       {
          "pointXid":"DP_873564",
-         "timestamp":1702611244076,
+         "timestamp":1713839971706,
          "value":"100.0"
       },
       {
          "pointXid":"DP_873564",
-         "timestamp":1702611243076,
+         "timestamp":1713839970706,
          "value":"0.0"
       },
       {
          "pointXid":"DP_873564",
-         "timestamp":1702611242076,
+         "timestamp":1713839969706,
          "value":"100.0"
+      },
+      {
+         "pointXid":"DP_873564",
+         "timestamp":1713839968706,
+         "value":"200.0"
+      },
+      {
+         "pointXid":"DP_873564",
+         "timestamp":1713839967706,
+         "value":"300.0"
+      },
+      {
+         "pointXid":"DP_873564",
+         "timestamp":1713839966706,
+         "value":"400.0"
+      },
+      {
+         "pointXid":"DP_873564",
+         "timestamp":1713839965706,
+         "value":"500.0"
+      },
+      {
+         "pointXid":"DP_873564",
+         "timestamp":1713839964706,
+         "value":"400.0"
+      },
+      {
+         "pointXid":"DP_873564",
+         "timestamp":1713839963706,
+         "value":"300.0"
+      },
+      {
+         "pointXid":"DP_873564",
+         "timestamp":1713839962706,
+         "value":"200.0"
+      },
+      {
+         "pointXid":"DP_873564",
+         "timestamp":1713839961706,
+         "value":"100.0"
+      },
+      {
+         "pointXid":"DP_873564",
+         "timestamp":1713839960706,
+         "value":"0.0"
+      },
+      {
+         "pointXid":"DP_873564",
+         "timestamp":1713839959706,
+         "value":"100.0"
+      },
+      {
+         "pointXid":"DP_873564",
+         "timestamp":1713839958706,
+         "value":"200.0"
+      },
+      {
+         "pointXid":"DP_873564",
+         "timestamp":1713839957706,
+         "value":"300.0"
+      },
+      {
+         "pointXid":"DP_873564",
+         "timestamp":1713839956706,
+         "value":"400.0"
+      },
+      {
+         "pointXid":"DP_873564",
+         "timestamp":1713839955706,
+         "value":"500.0"
+      },
+      {
+         "pointXid":"DP_873564",
+         "timestamp":1713839954706,
+         "value":"400.0"
+      },
+      {
+         "pointXid":"DP_873564",
+         "timestamp":1713839953706,
+         "value":"300.0"
+      },
+      {
+         "pointXid":"DP_873564",
+         "timestamp":1713839952706,
+         "value":"200.0"
+      },
+      {
+         "pointXid":"DP_873564",
+         "timestamp":1713839951706,
+         "value":"100.0"
+      },
+      {
+         "pointXid":"DP_873564",
+         "timestamp":1713839950706,
+         "value":"0.0"
+      },
+      {
+         "pointXid":"DP_873564",
+         "timestamp":1713839949706,
+         "value":"100.0"
+      },
+      {
+         "pointXid":"DP_873564",
+         "timestamp":1713839948706,
+         "value":"200.0"
+      },
+      {
+         "pointXid":"DP_873564",
+         "timestamp":1713839947706,
+         "value":"300.0"
+      },
+      {
+         "pointXid":"DP_873564",
+         "timestamp":1713839946706,
+         "value":"400.0"
+      },
+      {
+         "pointXid":"DP_873564",
+         "timestamp":1713839945706,
+         "value":"500.0"
+      },
+      {
+         "pointXid":"DP_873564",
+         "timestamp":1713839944706,
+         "value":"400.0"
+      },
+      {
+         "pointXid":"DP_873564",
+         "timestamp":1713839943706,
+         "value":"300.0"
+      },
+      {
+         "pointXid":"DP_873564",
+         "timestamp":1713839942706,
+         "value":"200.0"
+      },
+      {
+         "pointXid":"DP_873564",
+         "timestamp":1713839941706,
+         "value":"100.0"
+      },
+      {
+         "pointXid":"DP_873564",
+         "timestamp":1713839940706,
+         "value":"0.0"
+      },
+      {
+         "pointXid":"DP_873564",
+         "timestamp":1713839939706,
+         "value":"100.0"
+      },
+      {
+         "pointXid":"DP_873564",
+         "timestamp":1713839938706,
+         "value":"200.0"
+      },
+      {
+         "pointXid":"DP_873564",
+         "timestamp":1713839937706,
+         "value":"300.0"
+      },
+      {
+         "pointXid":"DP_873564",
+         "timestamp":1713839936706,
+         "value":"400.0"
+      },
+      {
+         "pointXid":"DP_873564",
+         "timestamp":1713839935706,
+         "value":"500.0"
+      },
+      {
+         "pointXid":"DP_873564",
+         "timestamp":1713839934706,
+         "value":"400.0"
+      },
+      {
+         "pointXid":"DP_873564",
+         "timestamp":1713839933706,
+         "value":"300.0"
+      },
+      {
+         "pointXid":"DP_873564",
+         "timestamp":1713839932706,
+         "value":"200.0"
+      },
+      {
+         "pointXid":"DP_873564",
+         "timestamp":1713839931706,
+         "value":"100.0"
+      },
+      {
+         "pointXid":"DP_873564",
+         "timestamp":1713839930706,
+         "value":"0.0"
+      },
+      {
+         "pointXid":"DP_873564",
+         "timestamp":1713839929706,
+         "value":"100.0"
+      },
+      {
+         "pointXid":"DP_873564",
+         "timestamp":1713839928706,
+         "value":"200.0"
+      },
+      {
+         "pointXid":"DP_873564",
+         "timestamp":1713839927706,
+         "value":"300.0"
+      },
+      {
+         "pointXid":"DP_873564",
+         "timestamp":1713839926706,
+         "value":"400.0"
+      },
+      {
+         "pointXid":"DP_873564",
+         "timestamp":1713839925706,
+         "value":"500.0"
+      },
+      {
+         "pointXid":"DP_873564",
+         "timestamp":1713839924706,
+         "value":"400.0"
+      },
+      {
+         "pointXid":"DP_873564",
+         "timestamp":1713839923706,
+         "value":"300.0"
+      },
+      {
+         "pointXid":"DP_873564",
+         "timestamp":1713839922706,
+         "value":"200.0"
+      },
+      {
+         "pointXid":"DP_873564",
+         "timestamp":1713839921706,
+         "value":"100.0"
+      },
+      {
+         "pointXid":"DP_873564",
+         "timestamp":1713839920706,
+         "value":"0.0"
+      },
+      {
+         "pointXid":"DP_873564",
+         "timestamp":1713839919706,
+         "value":"100.0"
+      },
+      {
+         "pointXid":"DP_873564",
+         "timestamp":1713839918706,
+         "value":"200.0"
+      },
+      {
+         "pointXid":"DP_873564",
+         "timestamp":1713839917706,
+         "value":"300.0"
+      },
+      {
+         "pointXid":"DP_873564",
+         "timestamp":1713839916706,
+         "value":"400.0"
+      },
+      {
+         "pointXid":"DP_873564",
+         "timestamp":1713839915706,
+         "value":"500.0"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713840014706,
+         "value":"15.493298762056328"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713840013706,
+         "value":"27.887133673819896"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713840012706,
+         "value":"20.603280772982522"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713840011706,
+         "value":"91.60440880945755"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713840010706,
+         "value":"37.523231329708985"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713840009706,
+         "value":"49.88041246931245"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713840008706,
+         "value":"24.338457852821026"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713840007706,
+         "value":"41.451768688306615"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713840006706,
+         "value":"38.57953300211757"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713840005706,
+         "value":"23.164347497238158"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713840004706,
+         "value":"90.04327939787314"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713840003706,
+         "value":"60.884419658062605"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713840002706,
+         "value":"96.70375823516228"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713840001706,
+         "value":"77.62429946203831"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713840000706,
+         "value":"53.93971186935419"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713839999706,
+         "value":"53.923288191436605"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713839998706,
+         "value":"64.90251228399761"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713839997706,
+         "value":"61.56005738348432"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713839996706,
+         "value":"39.32143435548853"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713839995706,
+         "value":"69.58258641799694"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713839994706,
+         "value":"49.39060565102298"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713839993706,
+         "value":"91.4271069433952"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713839992706,
+         "value":"34.60473017222164"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713839991706,
+         "value":"43.557487533392035"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713839990706,
+         "value":"72.50829627953307"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713839989706,
+         "value":"59.591813102932534"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713839988706,
+         "value":"79.29564824682295"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713839987706,
+         "value":"49.29291041517955"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713839986706,
+         "value":"73.04695944621487"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713839985706,
+         "value":"9.084893172088615"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713839984706,
+         "value":"23.107793050262583"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713839983706,
+         "value":"79.91778012738686"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713839982706,
+         "value":"21.71759720376196"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713839981706,
+         "value":"9.337564336092608"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713839980706,
+         "value":"48.465137979561355"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713839979706,
+         "value":"7.529140309154125"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713839978706,
+         "value":"54.49653403229566"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713839977706,
+         "value":"91.88471872355065"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713839976706,
+         "value":"71.62420232954585"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713839975706,
+         "value":"91.3105012659203"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713839974706,
+         "value":"51.582688944179566"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713839973706,
+         "value":"30.019527157380253"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713839972706,
+         "value":"62.65001134212387"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713839971706,
+         "value":"30.968785602400185"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713839970706,
+         "value":"14.700795287833357"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713839969706,
+         "value":"71.38382541841285"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713839968706,
+         "value":"49.48016531640897"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713839967706,
+         "value":"86.9742529806389"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713839966706,
+         "value":"20.484939868680605"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713839965706,
+         "value":"57.47867149673789"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713839964706,
+         "value":"96.31144695356414"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713839963706,
+         "value":"14.087774038030132"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713839962706,
+         "value":"52.67680529882376"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713839961706,
+         "value":"89.07943883653304"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713839960706,
+         "value":"71.54329068451901"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713839959706,
+         "value":"79.65984920468813"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713839958706,
+         "value":"40.87297303747774"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713839957706,
+         "value":"21.539830324164065"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713839956706,
+         "value":"45.512518567514945"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713839955706,
+         "value":"63.185705947214544"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713839954706,
+         "value":"58.555689660206866"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713839953706,
+         "value":"98.96918473082098"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713839952706,
+         "value":"83.2537223829869"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713839951706,
+         "value":"58.60090221574675"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713839950706,
+         "value":"58.141445623357846"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713839949706,
+         "value":"61.26743875279045"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713839948706,
+         "value":"22.519631692684584"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713839947706,
+         "value":"25.801755465225718"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713839946706,
+         "value":"45.7817459649338"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713839945706,
+         "value":"83.00214690801165"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713839944706,
+         "value":"52.29589442920049"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713839943706,
+         "value":"62.8750242827118"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713839942706,
+         "value":"23.65046765684359"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713839941706,
+         "value":"28.11189635498337"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713839940706,
+         "value":"32.04458966623914"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713839939706,
+         "value":"95.52118061813826"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713839938706,
+         "value":"52.45215399250708"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713839937706,
+         "value":"29.420537519121048"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713839936706,
+         "value":"16.910901370969267"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713839935706,
+         "value":"5.15566463260183"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713839934706,
+         "value":"11.885629548879917"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713839933706,
+         "value":"26.946556416760604"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713839932706,
+         "value":"79.12727949431623"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713839931706,
+         "value":"42.1724832583802"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713839930706,
+         "value":"61.79732410483915"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713839929706,
+         "value":"23.9920028563852"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713839928706,
+         "value":"40.8495045345488"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713839927706,
+         "value":"95.85455864087868"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713839926706,
+         "value":"31.758658507613134"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713839925706,
+         "value":"44.9953309546524"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713839924706,
+         "value":"58.6589975762375"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713839923706,
+         "value":"17.415158499431737"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713839922706,
+         "value":"91.80187863402274"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713839921706,
+         "value":"4.1325370895334395"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713839920706,
+         "value":"24.965765862905997"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713839919706,
+         "value":"17.654816812335817"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713839918706,
+         "value":"82.04871204490104"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713839917706,
+         "value":"18.65094055227099"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713839916706,
+         "value":"76.54637582434299"
+      },
+      {
+         "pointXid":"DP_636460",
+         "timestamp":1713839915706,
+         "value":"85.7181044301872"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713840014706,
+         "value":"50.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713840013706,
+         "value":"45.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713840012706,
+         "value":"40.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713840011706,
+         "value":"35.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713840010706,
+         "value":"30.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713840009706,
+         "value":"25.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713840008706,
+         "value":"20.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713840007706,
+         "value":"15.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713840006706,
+         "value":"10.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713840005706,
+         "value":"5.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713840004706,
+         "value":"0.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713840003706,
+         "value":"100.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713840002706,
+         "value":"95.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713840001706,
+         "value":"90.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713840000706,
+         "value":"85.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713839999706,
+         "value":"80.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713839998706,
+         "value":"75.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713839997706,
+         "value":"70.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713839996706,
+         "value":"65.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713839995706,
+         "value":"60.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713839994706,
+         "value":"55.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713839993706,
+         "value":"50.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713839992706,
+         "value":"45.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713839991706,
+         "value":"40.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713839990706,
+         "value":"35.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713839989706,
+         "value":"30.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713839988706,
+         "value":"25.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713839987706,
+         "value":"20.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713839986706,
+         "value":"15.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713839985706,
+         "value":"10.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713839984706,
+         "value":"5.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713839983706,
+         "value":"0.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713839982706,
+         "value":"100.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713839981706,
+         "value":"95.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713839980706,
+         "value":"90.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713839979706,
+         "value":"85.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713839978706,
+         "value":"80.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713839977706,
+         "value":"75.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713839976706,
+         "value":"70.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713839975706,
+         "value":"65.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713839974706,
+         "value":"60.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713839973706,
+         "value":"55.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713839972706,
+         "value":"50.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713839971706,
+         "value":"45.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713839970706,
+         "value":"40.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713839969706,
+         "value":"35.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713839968706,
+         "value":"30.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713839967706,
+         "value":"25.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713839966706,
+         "value":"20.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713839965706,
+         "value":"15.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713839964706,
+         "value":"10.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713839963706,
+         "value":"5.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713839962706,
+         "value":"0.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713839961706,
+         "value":"100.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713839960706,
+         "value":"95.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713839959706,
+         "value":"90.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713839958706,
+         "value":"85.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713839957706,
+         "value":"80.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713839956706,
+         "value":"75.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713839955706,
+         "value":"70.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713839954706,
+         "value":"65.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713839953706,
+         "value":"60.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713839952706,
+         "value":"55.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713839951706,
+         "value":"50.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713839950706,
+         "value":"45.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713839949706,
+         "value":"40.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713839948706,
+         "value":"35.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713839947706,
+         "value":"30.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713839946706,
+         "value":"25.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713839945706,
+         "value":"20.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713839944706,
+         "value":"15.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713839943706,
+         "value":"10.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713839942706,
+         "value":"5.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713839941706,
+         "value":"0.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713839940706,
+         "value":"100.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713839939706,
+         "value":"95.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713839938706,
+         "value":"90.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713839937706,
+         "value":"85.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713839936706,
+         "value":"80.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713839935706,
+         "value":"75.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713839934706,
+         "value":"70.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713839933706,
+         "value":"65.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713839932706,
+         "value":"60.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713839931706,
+         "value":"55.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713839930706,
+         "value":"50.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713839929706,
+         "value":"45.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713839928706,
+         "value":"40.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713839927706,
+         "value":"35.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713839926706,
+         "value":"30.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713839925706,
+         "value":"25.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713839924706,
+         "value":"20.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713839923706,
+         "value":"15.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713839922706,
+         "value":"10.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713839921706,
+         "value":"5.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713839920706,
+         "value":"0.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713839919706,
+         "value":"100.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713839918706,
+         "value":"95.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713839917706,
+         "value":"90.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713839916706,
+         "value":"85.0"
+      },
+      {
+         "pointXid":"DP_491577",
+         "timestamp":1713839915706,
+         "value":"80.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713840014706,
+         "value":"68.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713840013706,
+         "value":"67.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713840012706,
+         "value":"66.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713840011706,
+         "value":"65.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713840010706,
+         "value":"64.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713840009706,
+         "value":"63.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713840008706,
+         "value":"62.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713840007706,
+         "value":"61.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713840006706,
+         "value":"60.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713840005706,
+         "value":"59.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713840004706,
+         "value":"58.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713840003706,
+         "value":"57.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713840002706,
+         "value":"56.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713840001706,
+         "value":"55.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713840000706,
+         "value":"54.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713839999706,
+         "value":"53.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713839998706,
+         "value":"52.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713839997706,
+         "value":"51.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713839996706,
+         "value":"50.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713839995706,
+         "value":"49.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713839994706,
+         "value":"48.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713839993706,
+         "value":"47.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713839992706,
+         "value":"46.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713839991706,
+         "value":"45.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713839990706,
+         "value":"44.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713839989706,
+         "value":"43.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713839988706,
+         "value":"42.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713839987706,
+         "value":"41.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713839986706,
+         "value":"40.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713839985706,
+         "value":"39.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713839984706,
+         "value":"38.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713839983706,
+         "value":"37.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713839982706,
+         "value":"36.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713839981706,
+         "value":"35.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713839980706,
+         "value":"34.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713839979706,
+         "value":"33.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713839978706,
+         "value":"32.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713839977706,
+         "value":"31.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713839976706,
+         "value":"30.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713839975706,
+         "value":"29.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713839974706,
+         "value":"28.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713839973706,
+         "value":"27.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713839972706,
+         "value":"26.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713839971706,
+         "value":"25.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713839970706,
+         "value":"24.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713839969706,
+         "value":"23.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713839968706,
+         "value":"22.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713839967706,
+         "value":"21.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713839966706,
+         "value":"20.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713839965706,
+         "value":"19.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713839964706,
+         "value":"18.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713839963706,
+         "value":"17.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713839962706,
+         "value":"16.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713839961706,
+         "value":"15.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713839960706,
+         "value":"14.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713839959706,
+         "value":"13.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713839958706,
+         "value":"12.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713839957706,
+         "value":"11.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713839956706,
+         "value":"10.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713839955706,
+         "value":"9.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713839954706,
+         "value":"8.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713839953706,
+         "value":"7.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713839952706,
+         "value":"6.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713839951706,
+         "value":"5.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713839950706,
+         "value":"4.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713839949706,
+         "value":"3.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713839948706,
+         "value":"2.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713839947706,
+         "value":"1.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713839946706,
+         "value":"0.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713839945706,
+         "value":"100.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713839944706,
+         "value":"99.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713839943706,
+         "value":"98.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713839942706,
+         "value":"97.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713839941706,
+         "value":"96.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713839940706,
+         "value":"95.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713839939706,
+         "value":"94.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713839938706,
+         "value":"93.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713839937706,
+         "value":"92.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713839936706,
+         "value":"91.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713839935706,
+         "value":"90.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713839934706,
+         "value":"89.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713839933706,
+         "value":"88.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713839932706,
+         "value":"87.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713839931706,
+         "value":"86.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713839930706,
+         "value":"85.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713839929706,
+         "value":"84.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713839928706,
+         "value":"83.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713839927706,
+         "value":"82.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713839926706,
+         "value":"81.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713839925706,
+         "value":"80.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713839924706,
+         "value":"79.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713839923706,
+         "value":"78.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713839922706,
+         "value":"77.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713839921706,
+         "value":"76.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713839920706,
+         "value":"75.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713839919706,
+         "value":"74.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713839918706,
+         "value":"73.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713839917706,
+         "value":"72.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713839916706,
+         "value":"71.0"
+      },
+      {
+         "pointXid":"DP_967299",
+         "timestamp":1713839915706,
+         "value":"70.0"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713840014706,
+         "value":"62.40713699764824"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713840013706,
+         "value":"72.64259648686362"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713840012706,
+         "value":"9.73526007097114"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713840011706,
+         "value":"6.553374773985265"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713840010706,
+         "value":"12.206480270066255"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713840009706,
+         "value":"12.203811106440243"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713840008706,
+         "value":"98.83828802494244"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713840007706,
+         "value":"38.26046507535676"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713840006706,
+         "value":"95.85905872009303"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713840005706,
+         "value":"60.72472075418071"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713840004706,
+         "value":"25.895039680888576"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713840003706,
+         "value":"92.45306719026442"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713840002706,
+         "value":"42.00775074524036"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713840001706,
+         "value":"69.18887535988459"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713840000706,
+         "value":"50.04553270250229"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713839999706,
+         "value":"96.08696017289985"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713839998706,
+         "value":"70.52689463951738"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713839997706,
+         "value":"22.403683046199554"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713839996706,
+         "value":"85.9022258961764"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713839995706,
+         "value":"42.59172823076901"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713839994706,
+         "value":"10.544337488798517"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713839993706,
+         "value":"99.48005941221857"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713839992706,
+         "value":"9.197190449760006"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713839991706,
+         "value":"89.53607516014502"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713839990706,
+         "value":"74.8660977694584"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713839989706,
+         "value":"41.39823620682348"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713839988706,
+         "value":"59.26157949621288"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713839987706,
+         "value":"56.933999044477424"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713839986706,
+         "value":"27.912965165597768"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713839985706,
+         "value":"69.01915693583017"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713839984706,
+         "value":"87.94672342903675"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713839983706,
+         "value":"82.05122141846488"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713839982706,
+         "value":"9.278449409564093"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713839981706,
+         "value":"19.90077556081099"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713839980706,
+         "value":"29.596272646206767"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713839979706,
+         "value":"11.571222259660496"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713839978706,
+         "value":"0.017451579981253573"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713839977706,
+         "value":"97.27868210835966"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713839976706,
+         "value":"91.67872930558491"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713839975706,
+         "value":"36.98028171583941"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713839974706,
+         "value":"43.775006332056755"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713839973706,
+         "value":"49.570392954357935"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713839972706,
+         "value":"90.6897547508101"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713839971706,
+         "value":"4.030879184939728"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713839970706,
+         "value":"59.86449755164504"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713839969706,
+         "value":"23.762716936022333"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713839968706,
+         "value":"82.9336321886075"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713839967706,
+         "value":"52.142857361328986"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713839966706,
+         "value":"10.404707083706588"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713839965706,
+         "value":"61.04153580134807"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713839964706,
+         "value":"64.79324966982826"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713839963706,
+         "value":"64.6016728079428"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713839962706,
+         "value":"8.625078910073436"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713839961706,
+         "value":"28.023398972857805"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713839960706,
+         "value":"42.09798817056857"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713839959706,
+         "value":"35.41316972531243"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713839958706,
+         "value":"80.448571093148"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713839957706,
+         "value":"1.9483001925365562"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713839956706,
+         "value":"93.19887610038879"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713839955706,
+         "value":"83.67421114301467"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713839954706,
+         "value":"16.46147115492328"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713839953706,
+         "value":"53.19301441817669"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713839952706,
+         "value":"75.36041366043332"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713839951706,
+         "value":"71.3185557757871"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713839950706,
+         "value":"76.37954646289316"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713839949706,
+         "value":"93.46435285225967"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713839948706,
+         "value":"49.078394850859105"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713839947706,
+         "value":"5.097348297454807"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713839946706,
+         "value":"33.11990901753135"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713839945706,
+         "value":"83.03174055063032"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713839944706,
+         "value":"19.933153647173228"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713839943706,
+         "value":"28.653615000201683"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713839942706,
+         "value":"68.58796993819782"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713839941706,
+         "value":"15.358466296451834"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713839940706,
+         "value":"22.587571830642407"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713839939706,
+         "value":"35.55012141646179"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713839938706,
+         "value":"58.28885484651272"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713839937706,
+         "value":"22.49099056024576"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713839936706,
+         "value":"96.53924593511057"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713839935706,
+         "value":"59.10996822474453"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713839934706,
+         "value":"6.8726591693469725"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713839933706,
+         "value":"69.56569028876946"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713839932706,
+         "value":"28.23617836253528"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713839931706,
+         "value":"19.929324484978373"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713839930706,
+         "value":"21.722909345062945"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713839929706,
+         "value":"31.79240026650323"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713839928706,
+         "value":"59.165355111850545"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713839927706,
+         "value":"36.92163801684229"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713839926706,
+         "value":"36.69762311125757"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713839925706,
+         "value":"72.27414543871879"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713839924706,
+         "value":"84.52361615166019"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713839923706,
+         "value":"32.75271377103061"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713839922706,
+         "value":"23.13232368177065"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713839921706,
+         "value":"64.0224231948433"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713839920706,
+         "value":"92.08017566596259"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713839919706,
+         "value":"89.5260603566236"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713839918706,
+         "value":"50.214398756036296"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713839917706,
+         "value":"24.52742776591651"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713839916706,
+         "value":"15.840152754869575"
+      },
+      {
+         "pointXid":"DP_804121",
+         "timestamp":1713839915706,
+         "value":"35.577823303877466"
       }
    ],
    "systemSettings":[
