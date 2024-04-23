@@ -1,3 +1,11 @@
+/* ESTE PROGRAMA SE COMUNICA COM O SCADABR VIA MODBU-IP 
+   PINOS UTILIZADOS:
+        SENSOR DE UMIDADE E TEMPERATURA DHT11 -> A1 
+        SENSOR DE UMIDADE DO SOLO             -> A0
+        SENSOR DE LUMINOSIDADE LDR            -> A2
+        SENSOR DE DISTANCIA ULTRASSONICO      -> TRIGGER(4)/ECHO(5)
+        POTENCIOMETRO                         ->
+*/
 #include <SPI.h>
 #include <Ethernet.h>
 #include <Modbus.h>
@@ -36,7 +44,7 @@ void setup() {
     // The media access control (ethernet hardware) address for the shield
     byte mac[] = { 0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0xED };  
     // The IP address for the shield
-    byte ip[] = { 192, 168, 1, 120 };   
+    byte ip[] = { 192, 168, 0, 120 };   
     //Config Modbus IP 
     mb.config(mac, ip);
     dht.begin(); // inicializa o sensor DHT11
